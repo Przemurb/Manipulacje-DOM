@@ -47,3 +47,21 @@ function addDynamicClassToBullets() {
 }
 
 setTimeout(addDynamicClassToBullets, 5000);
+
+function addNews() {
+    const newsList = document.querySelector("#sport-list");
+    let li = document.createElement("li");
+    // let text = document.createTextNode("wiadomość sportowa 3");
+    // li.appendChild(text);
+    li.textContent = "wiadomość sportowa 3";
+    newsList.appendChild(li);
+}
+
+setTimeout(addNews, 6000);
+
+function removeSecondNews() {
+    let secondNews = document.querySelector("#news-list > li:nth-child(2)");
+    secondNews.remove();
+}
+
+setTimeout(removeSecondNews, 7000);
