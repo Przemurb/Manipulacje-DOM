@@ -37,3 +37,13 @@ function addDynamicClassToH2() {
         element.classList.add("dynamic");
     }
 }
+
+setTimeout(addDynamicClassToH2, 2000);        
+    
+function addDynamicClassToBullets() {
+    let secondBullets = document.querySelectorAll("ul > li:nth-child(2)");
+    const addDynamicClass = element => element.classList.add("dynamic");
+    secondBullets.forEach(addDynamicClass)
+}
+
+setTimeout(addDynamicClassToBullets, 5000);
