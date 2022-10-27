@@ -20,3 +20,20 @@ function ShowSportNews() {
     }
 
 ShowSportNews();
+
+function changeHeaders() {
+    let news = document.getElementById("news");
+    news.innerHTML = "Ale hity!"
+    let sport = document.getElementById("sport");
+    sport.innerHTML = "To ma być sport?"
+}
+
+setTimeout(changeHeaders, 3000);
+
+function addDynamicClassToH2() {
+    let h2Elements = document.getElementsByTagName("h2");
+    for(let i = 0; i < h2Elements.length; i++) {
+        const element = h2Elements[i];
+        element.classList.add("dynamic");
+    }
+}
