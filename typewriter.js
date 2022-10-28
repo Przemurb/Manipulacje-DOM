@@ -9,7 +9,7 @@ function typewriter(string, lentancy) {
     //     setTimeout(() => addCharToText(chars[i]), (i * lentancy))
     // }
     for(let i = 0; i < string.length; i++) {
-        setTimeout(() => addCharToText(string.charAt(i)), (i * lentancy));
+        setTimeout(() => addCharToText(string.charAt(i)), ((i + 1) * lentancy));
     }
 
 }
